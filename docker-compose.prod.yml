@@ -6,13 +6,8 @@ services:
     restart: always
     env_file:
       - .env
-    environment:
-      - FLASK_ENV=development
-    #had to change the port to 5001 because of macos
     ports:
-      - "5001:5000"
-    volumes:
-      - .:/myportfolio
+      - "5000:5000"
     depends_on:
       - mysql
 
