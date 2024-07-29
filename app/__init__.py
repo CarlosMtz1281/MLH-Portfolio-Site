@@ -61,7 +61,7 @@ workExperience = [
         "title": "MLH Production Engineer Fellow",
         "company": "Major League Hacking",
         "date": "June 2024 - Present",
-        "description": "Participated in a fellowship program focused on site reliability engineering and DevOps. Implemented CI/CD pipelines, monitored system performance, and collaborated with a global team to improve application scalability and reliability.",
+        "description": "I'm currently participating in a fellowship program focused on site reliability engineering and DevOps. Implemented CI/CD pipelines, monitored system performance, and collaborated with a global team to improve application scalability and reliability.",
         "image": "./static/img/MLH_logo.png"
     },
     {
