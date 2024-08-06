@@ -35,3 +35,9 @@ jobs:
         SSH_IP: ${{ secrets.SSH_IP }}
         PROJECT_ROOT: ${{ secrets.PROJECT_ROOT }}
       run: ssh my-vps 'cd $PROJECT_ROOT && pwd'
+
+    - name: Deploy Site
+      env:
+        SSH_USER: ${{ secrets.SSH_USER }}
+        SSH_IP: ${{ secrets.SSH_IP }}
+      run: ssh my-vps '~/redeploy-site.sh'
