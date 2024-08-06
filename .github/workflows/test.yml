@@ -14,19 +14,19 @@ jobs:
     env:
       TESTING: true
     steps:
-      -name: checkout Repository
-      users: actions/checkout@v2
+      - name: Checkout Repository
+        uses: actions/checkout@v2
 
-      -name: Setup Python
-      uses: actions/setup-python@4
-      with:
-        python-version: '3.9.1'
+      - name: Setup Python
+        uses: actions/setup-python@4
+        with:
+          python-version: '3.9.1'
 
-      -name: Setup Python Virtual Enviorment
-      run: python -m venv python3-virtualenv
+      - name: Setup Python Virtual Environment
+        run: python -m venv python3-virtualenv
 
-      -name: Install Dependencies
-      run: python3-virtualenv/bin/pip install -r requierments
+      - name: Install Dependencies
+        run: python3-virtualenv/bin/pip install -r requirements.txt
 
-      -name: Run Tests
-      run: ./run_test.sh
+      - name: Run Tests
+        run: ./run_test.sh
